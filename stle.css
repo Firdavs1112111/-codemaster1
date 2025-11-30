@@ -230,14 +230,17 @@ article li {
     width: 100%;
     font-size: 30px;
 }
-.cost b{
+
+.cost b {
     font-size: 20px;
 }
-.cost p{
+
+.cost p {
     color: rgb(0, 136, 255);
     font-size: 40px;
 }
-.cost button{
+
+.cost button {
     color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 10px;
@@ -247,4 +250,36 @@ article li {
     background-color: rgba(1, 13, 254, 0.842);
     border: 0px;
     /* text-align: center; */
+}
+
+.cost button:hover {
+    background-color: rgba(81, 1, 254, 0.842);
+}
+
+.cost input {
+    margin: auto;
+    /* padding: 10px 250px; */
+    width: 600px; 
+    height: 35px; 
+    display: block;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+ .cost select {
+    width: 600px;
+    height: 35px;
+    border-radius: 10px;
+} 
+/* .cost h1{
+    padding: 0px 0px;
+} */
+footer p{   
+color: aliceblue;
+}
+footer {
+    text-align: center ;
+    margin-top: 30px;
+    background-color: rgb(40, 38, 38);
+    padding: 20px 0px;
 }
