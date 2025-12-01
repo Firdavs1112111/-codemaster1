@@ -5,12 +5,23 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(24, 104, 179), rgb(16, 51, 132));
-    height: 500px;
+    background-image: linear-gradient(to right, rgba(72, 155, 233, 0.904), rgb(23, 122, 215), rgb(16, 51, 132));
+    /* height: 500px; */
+    padding: 60px 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+@keyframes firik {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 header h2 {
@@ -23,22 +34,32 @@ header nav {
     display: flex;
 }
 
+
 header a {
+    text-decoration: none;
     color: white;
+}
+
+header a:hover{
+    color: rgb(235, 111, 23);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     width: 100%;
     text-align: center;
+    animation: firik 2s linear;
 }
 
 header p {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     color: white;
     width: 100%;
+    animation: firik 2s linear;
 }
 
 
@@ -54,6 +75,8 @@ header button {
 
 button:hover {
     background-color: rgba(77, 171, 234, 0.432);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 button:active {
@@ -244,7 +267,8 @@ article li {
     color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 10px;
-    width: 200px;
+    width: 100px;
+    margin-left: 15px;
     /* Когда у меня 200px кнопка не в центре когда я даю центр неработает*/
     height: 40px;
     background-color: rgba(1, 13, 254, 0.842);
@@ -254,31 +278,71 @@ article li {
 
 .cost button:hover {
     background-color: rgba(81, 1, 254, 0.842);
+
 }
 
-.cost input {
+/* ========================================7========================== */
+aside {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding:0px 50px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+aside h1{
+    text-align: left;
+}
+aside input {
     margin: auto;
-    /* padding: 10px 250px; */
-    width: 600px; 
-    height: 35px; 
+    padding: 5px;
+    width: 600px;
+    height: 35px;
     display: block;
     border-radius: 10px;
     border: 1px solid grey;
+    margin: auto;
+    margin-top: 30px;
 }
 
- .cost select {
+aside select {
+    margin: auto;
+    padding: 5px;
     width: 600px;
     height: 35px;
+    display: block;
     border-radius: 10px;
-} 
-/* .cost h1{
-    padding: 0px 0px;
-} */
-footer p{   
-color: aliceblue;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 30px;
 }
+
+aside button {
+    margin-top: 50px ;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(1, 13, 254, 0.842);
+    border: 0px;
+}
+
+aside button:hover {
+    background-color: rgba(81, 1, 254, 0.842);
+}
+
+footer p {
+    color: aliceblue;
+}
+
 footer {
-    text-align: center ;
+    text-align: center;
     margin-top: 30px;
     background-color: rgb(40, 38, 38);
     padding: 20px 0px;
